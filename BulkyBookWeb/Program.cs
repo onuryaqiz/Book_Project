@@ -14,6 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 
     ));
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation(); // Frontend compile
 
 var app = builder.Build();
 
